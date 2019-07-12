@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css">
+  <title>TT2 Parser - v1.0</title>
+
+  <!-- js logic script -->
+  <script src="TT2Parser.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <h1>TT2 Parser - v1.0</h1>
+    <h6>&copy; 2019 Ahmed Rasool</h6>
+  </div>
+  <div>
+    <hr>
+    <h3>INPUT</h3>
+    <hr>
+    <textarea id="input" placeholder=" Type or Paste input here"></textarea>
+    <br><button onclick="tt2parser()">PARSE</button>
+    <button onclick="tt2format()">FORMAT</button>
+    <button onclick="jsonParser()">JSON</button>
+  </div>
+
+
+  <div>
+    <hr>
+    <h3>OUTPUT</h3>
+    <hr>
+    <p id="output-p" class="hide"></p>
+    <table id="output-table" class="hide">
+      <thead id='output-head'>
+        <!-- <tr>
+          <td>line</td>
+          <td>tagName</td>
+          <td>scope</td>
+          <td>value1</td>
+          <td>value2</td>
+          <td>value3</td>
+          <td>value4</td>
+        </tr>
+      </thead> -->
+      <tbody id="output">
+
+      </tbody>
+    </table>
+  </div>
+
+
+</body>
+
+</html>
