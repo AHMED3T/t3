@@ -13,45 +13,56 @@
 </head>
 
 <body>
-  <div id="header">
+
+  <!-- header start -->
+  <header id="header">
     <h1>TurboTags2 Tools - v1.0</h1>
     <h6>By: <a href="https://github.com/ahmed-rasool">Ahmed Rasool</a></h6>
-  </div>
-  <div>
-    <hr>
-    <h3>INPUT</h3>
-    <hr>
-    <textarea id="input" placeholder=" Type or Paste input here"></textarea>
-    <br><button onclick="tt2parser()">PARSE</button>
-    <button onclick="tt2format()">FORMAT</button>
-    <button onclick="jsonParser()">JSON</button>
-  </div>
+  </header>
+  <!-- header end -->
 
+  <!-- main element start -->
+  <main>
 
-  <div>
-    <hr>
-    <h3>OUTPUT</h3>
-    <hr>
-    <p id="output-p" class="hide"></p>
-    <table id="output-table" class="hide">
-      <thead id='output-head'>
-        <!-- <tr>
-          <td>line</td>
-          <td>tagName</td>
-          <td>scope</td>
-          <td>value1</td>
-          <td>value2</td>
-          <td>value3</td>
-          <td>value4</td>
-        </tr>
-      </thead> -->
-      <tbody id="output">
+    <!-- input area start -->
+    <div>
+      <hr>
+      <h3>INPUT</h3>
+      <hr>
+      <textarea id="input" placeholder=" Type or Paste input here"></textarea>
+      <br><button onclick="tt2parser()">PARSE</button>
+      <button onclick="tt2format()">FORMAT</button>
+      <button onclick="jsonParser()">JSON</button>
+    </div>
+    <!-- input area end -->
 
-      </tbody>
-    </table>
-  </div>
+    <!-- output area start -->
+    <div>
+      <hr>
+      <h3>OUTPUT</h3>
+      <hr>
+      <p id="output-p" class="hide"></p>
+      <table id="output-table" class="hide">
+        <thead id='output-head'>
+          <!-- <tr>
+                <td>line</td>
+                <td>tagName</td>
+                <td>scope</td>
+                <td>value1</td>
+                <td>value2</td>
+                <td>value3</td>
+                <td>value4</td>
+              </tr>
+            </thead> -->
+        <tbody id="output">
 
+        </tbody>
+      </table>
+    </div>
+    <!-- output area end -->
 
+  </main>
+  <!-- main element end -->
 </body>
 
 </html>
