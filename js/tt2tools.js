@@ -121,8 +121,7 @@ const formatTT2 = () => {
   const inputText = document.getElementById('input').value;
 
   // replacing "(double-quotation marks) with \" to make it escaped string
-  const result = inputText.replace(/"/g, '\\\"');
-
+  const result = inputText.replace(/"\n"/g, `"\\r"`).replace(/"/g, '\\"')
   // unhiding the hidden output paragraph
   document.getElementById('output-p').classList.remove('hide')
 
