@@ -4,56 +4,26 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* color: whitesmoke */
 }
-/* 
-body {
-  margin: 0px auto;
-  width: 75vw;
-  background-color: grey
-}*/
+
+/* over-riding bootstrap's default placeholder color */
+.form-control::-webkit-input-placeholder { color: gray; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: gray; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: gray; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: gray; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: gray; }  /* Microsoft Edge */
+
+
+/* over-riding bootstrap's default blue border glow */
+
+.form-control:focus {
+  border-color: #00FF00;
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 255, 0, 0.6);
+}
+
 
 sup, sub {
   font-size: 0.75rem;
 }
-/*
-textarea {
-  width: 100%;
-  height: 20vh;
-  background-color: black;
-  font-size: 1rem;
-  font-family: 'Courier New', Courier, monospace;
-  margin: 10px 0;
-  padding-top: 7px
-}
-
-#header {
-  margin: 25px 0px;
-  text-align: center
-}
-
-button {
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  margin: 0px 0px 10px 0px;
-  background-color: darkgray;
-  border: 1px solid dotted;
-  font-size: 1.25rem
-}
-
-h3 {
-  margin: 10px 0px
-}
-
-hr {
-  border: 1px solid white;
-}
-
-table {
-  margin-top: 15px;
-  width: 100%;
-  background-color: black;
-  overflow-x: auto
-} */
 
 .hide {
   display: none

@@ -16,40 +16,37 @@
 <body class="container-fluid bg-dark">
 
   <!-- header start -->
-  <header class="text-center mt-2 text-light">
-    <h1>TurboTags2 Tools - v1.0<sup> beta</sup></h1>
-    <h6>By: <a href="https://github.com/ahmed-rasool" class="text-warning">Ahmed Rasool</a></h6>
+  <header class="text-center my-3 text-success">
+    <h1>TurboTags2 Tools - v1.0<sup class="text-warning"> beta</sup></h1>
+    <h6>Developed by: <a href="https://github.com/ahmed-rasool" class="text-primary">Ahmed Rasool</a></h6>
   </header>
   <!-- header end -->
 
   <!-- main element start -->
-  <main>
+  <main class="w-75 mx-auto">
 
     <!-- input section start -->
-    <section>
+    <section class="my-5">
       <form onsubmit="event.preventDefault()">
-        <textarea id="input" class="form-control w-75 mx-auto" placeholder=" Type or Paste input here"
+        <textarea id="input" class="form-control bg-dark text-white-50" placeholder=" Type or Paste input here"
           rows="5"></textarea>
 
         <div class="d-flex justify-content-center my-3">
           <button onclick="reset()" class="btn btn-danger btn-lg mx-2">RESET</button>
-          <button onclick="parseTT2()" class="btn btn-secondary btn-lg mx-2">PARSE</button>
-          <button onclick="formatTT2()" class="btn btn-secondary btn-lg mx-2">FORMAT</button>
-          <button onclick="parseJSON()" class="btn btn-secondary btn-lg mx-2">JSON</button>
+          <button onclick="parseTT2()" class="btn btn-success btn-lg mx-2">PARSE</button>
+          <button onclick="formatTT2()" class="btn btn-success btn-lg mx-2">FORMAT</button>
+          <button onclick="parseJSON()" class="btn btn-success btn-lg mx-2">JSON</button>
           <button onclick="reset()" class="btn btn-danger btn-lg mx-2">RESET</button>
 
         </div>
       </form>
-
     </section>
     <!-- input section end -->
 
+    <hr class="border-secondary">
     <!-- output section start -->
-    <section>
-      <hr>
-      <h3>OUTPUT</h3>
-      <hr>
-      <code id="output-p" class="hide overflow-auto"></code>
+    <section class="bg-secondary text-white-50 container overflow-auto">
+      <code id="output-p" class="hide text-white"></code>
       <table id="output-table" class="hide table table-dark">
         <thead id='output-head'>
           <!-- <tr>
