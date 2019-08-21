@@ -170,3 +170,9 @@ const parseJSON = () => {
   //   console.log(`"${key}": "${result[key]}"`)
   // }
 };
+
+
+// This function reloads the page and is replacement to native html reset button
+const reset = () => {
+  document.location.reload()
+}

@@ -1,0 +1,3 @@
+
+# excluding bootstrap files
+css/bootstrap*.*
